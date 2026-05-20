@@ -17,4 +17,23 @@ or run test with
 ```bash
  docker run --rm --name flask_hello -p 5000:5000 flask_hello ./test.py --ve
 ```
-# devops-jenkins-k8s-02
+
+# Configure kubernetes cloud in jenkins
+
+Kubernetes url :
+
+```bash
+kubectl cluster-info
+```
+
+Jenkins url :
+
+```bash
+minikube service service-jenkins -n jenkins --url
+```
+
+Jenkins tunnel :
+
+```bash
+
+```
