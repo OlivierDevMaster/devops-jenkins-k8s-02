@@ -32,6 +32,7 @@ spec:
               containerPort: 8080
             - name: jnlpport
               containerPort: 50000
+              hostPort: 50000
           livenessProbe:
             httpGet:
               path: "/login"
