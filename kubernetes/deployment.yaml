@@ -15,8 +15,8 @@ spec:
     metadata:
       labels:
         app: pythontest
-  spec:
-    containers:
+    spec:
+      containers:
       - image: 192.168.1.137:4000/pythontest:latest
         name: pythontest
         ports:

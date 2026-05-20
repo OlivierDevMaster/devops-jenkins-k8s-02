@@ -10,6 +10,7 @@ metadata:
   labels:
     component: ci
 spec:
+  serviceAccountName: admin-jenkins
   containers:
   - name: python
     image: python:3.11
