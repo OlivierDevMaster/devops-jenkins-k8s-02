@@ -45,12 +45,12 @@ spec:
                 }
             }
         }
-        
+
         stage('Build image') {
             steps {
                 container('docker') {
-                    sh "docker build -t localhost:4000/pythontest:latest ."
-                    sh "docker push localhost:4000/pythontest:latest"
+                    sh "docker build -t 192.168.1.137:4000/pythontest:latest ."
+                    sh "docker push 192.168.1.137:4000/pythontest:latest"
                 }
             }
         }
